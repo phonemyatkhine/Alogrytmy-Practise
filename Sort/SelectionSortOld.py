@@ -11,7 +11,15 @@ def selectionSort(arr) :
     newArr = []
     for i in range(len(arr)) :
         smallest = findSmallest(arr)
-        newArr.append(arr.pop(smallest))
+        newArr.append(arr.pop(smallest)) #arr.pop basically pop outs the index and keep the others
     return newArr
 
 print (selectionSort([10,5,23,12,4,1]))
+
+# def sum(arr) :
+#     if(len(arr) == 1) :
+#         return 1
+#     else :
+#         return arr.pop(0) + sum(arr)
+
+# print (sum([10,5,23,12,4,1]))
